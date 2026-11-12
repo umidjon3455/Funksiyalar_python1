@@ -45,6 +45,10 @@ def foiz_hisobla():
 
 def arifmetik_orta():
     n = int(input("Nechta son kiritasiz?: "))
+    if n <= 0:
+        print("Sonlar miqdori 0 dan katta bo'lishi kerak")
+        return
+
     yigindi = 0
     for i in range(n):
         son = float(input(f"{i+1}-son: "))
@@ -247,7 +251,7 @@ while True:
     print("37 - Parol tekshirish")
     print("0  - Chiqish")
 
-    tanlov = input("Tanlang (0-17): ")
+    tanlov = input("Tanlang (0-37): ")
 
     if tanlov == "1":
         salom_ber()
